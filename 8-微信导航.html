@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul li {
+            list-style: none;
+        }
+        .wx-contanier {
+            width:100%;
+            height: 620px;
+            background-image: url(./image/wxnav.jpg);
+            background-repeat: repeat-x;
+
+        }
+
+        .wx-nav {
+            width:100%;
+            height: 72px;
+         
+        }
+        .nav-list {
+            margin-left: 200px;
+            overflow: hidden;
+        }
+        .nav-list li {
+            float: left;
+            margin-left: 30px;
+            line-height: 72px;
+           
+        }
+        .nav-list li a {
+        
+            font-size: 14px;
+            color:#fff;
+            display: inline-block;
+            line-height: 33px;
+            padding-left: 20px;
+
+        }
+        .nav-list li a span{
+            display: inline-block;
+            line-height: 33px;
+            padding-right: 20px;
+
+        }
+
+
+   
+        /* a铺左侧半圆  撑开左内边距   以左上角去铺0% 0%
+        span铺右侧半圆  撑开右内边距   以右上角去铺100% 0%
+        
+         */
+     
+         .first a,.first a span {
+          
+            background-image: url(./image/lTcb_ve.png);
+
+         }
+         .first a {
+            padding-left: 20px;
+            background-position: 0px 0px;
+
+         } 
+         .first  a span { 
+             padding-right: 20px;
+             background-position: 100%  0%;
+
+         }
+         .nav-list li a:hover {
+         
+            background-image: url(./image/lTcb_ve.png);
+          
+            background-position: 0px 0px;
+
+
+         }
+         .nav-list li a:hover  span {
+           
+            background-image: url(./image/lTcb_ve.png);
+          
+            background-position: 100% 0%;
+
+
+         }
+         
+
+
+    </style>
+</head>
+<body>
+    <div class="wx-contanier">
+        <div class="wx-nav">
+            <ul class="nav-list">
+            
+                <li class="first"><a href=""><span>首页</span></a></li>
+                <li><a href=""><span>帮助与反馈</span></a></li>
+                <li><a href=""><span>公众平台</span></a></li>
+                <li><a href=""><span>微信网页版</span></a></li>
+                <li><a href=""><span>表情开放平台</span></a></li>
+            
+            </ul>
+       </div>
+    </div>
+
+</body>
+</html>
